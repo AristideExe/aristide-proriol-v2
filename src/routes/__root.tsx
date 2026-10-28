@@ -1,5 +1,5 @@
-import { Outlet, createRootRoute, Link } from '@tanstack/react-router'
-
+import { Outlet, createRootRoute, } from '@tanstack/react-router'
+import {Header} from "#/components/Header/Header.tsx";
 import '../styles.css'
 
 export const Route = createRootRoute({
@@ -9,13 +9,10 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <>
-        <div>
-            <Link to="/">home</Link>
-            <Link to="/about">about</Link>
-            <Link to="/projects">projects</Link>
-            <Link to="/contact">contact</Link>
-        </div>
-      <Outlet />
+      <Header />
+      <div className="mt-20 px-20">
+          <Outlet />
+      </div>
     </>
   )
 }

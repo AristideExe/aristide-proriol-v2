@@ -13,5 +13,10 @@ body,
 
 body {
   margin: 0;
+  background-color: var(--background-color);
+  color: white;
 }
 
+:root {
+  --background-color: #3939ff;
+}
