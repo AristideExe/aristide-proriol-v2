@@ -1,5 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 import {Title} from "#/components/Titles/Title.tsx";
+import {SectionHeader} from "#/components/Titles/SectionHeader.tsx";
+import {UpdateDate} from "#/components/UpdateDate/UpdateDate.tsx";
+import {Section} from "#/components/Section/Section.tsx";
 
 export const Route = createFileRoute('/about')({
   component: About,
@@ -9,6 +12,20 @@ function About() {
   return (
       <div>
           <Title><h1>about</h1></Title>
+          <Section>
+              <SectionHeader>
+                  <h2 className="text-3xl font-bold">Links</h2>
+                  <UpdateDate>Updated on 28/10/2026</UpdateDate>
+              </SectionHeader>
+              <ul>
+                  <li>GitHub</li>
+                  <li>LinkedIn</li>
+                  <li>YouTube</li>
+                  <li>Twitter</li>
+                  <li>Letterboxd</li>
+                  <li>Instagram</li>
+              </ul>
+          </Section>
       </div>
   )
 }
