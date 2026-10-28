@@ -10,7 +10,7 @@ function RootComponent() {
   return (
     <>
       <Header />
-      <div className="mt-20 px-20">
+      <div className="mt-20 md:w-3/5 mx-auto px-5">
           <Outlet />
       </div>
     </>

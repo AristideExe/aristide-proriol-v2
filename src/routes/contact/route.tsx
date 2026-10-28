@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import {Title} from "#/components/Titles/Title.tsx";
 
 export const Route = createFileRoute('/contact')({
   component: Contact,
@@ -7,7 +8,7 @@ export const Route = createFileRoute('/contact')({
 function Contact() {
   return (
       <div>
-        <h1>Contact</h1>
+          <Title><h1>contact</h1></Title>
       </div>
   )
 }
