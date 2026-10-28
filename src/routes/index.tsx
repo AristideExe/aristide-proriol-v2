@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { SectionHeader } from '#/components/Titles/SectionHeader'
+import { SectionTitle } from '#/components/Titles/SectionTitle'
+import { SectionHeader } from '#/components/Section/SectionHeader'
 import { UpdateDate } from '../components/UpdateDate/UpdateDate'
 import {Title} from "#/components/Titles/Title.tsx";
 import {Section} from "#/components/Section/Section";
@@ -12,8 +13,10 @@ function Home() {
         <Title><h1>home</h1></Title>
         <Section>
             <SectionHeader>
-                <h2 className="text-3xl font-bold">Presentation</h2>
-                <UpdateDate>Updated on 28/10/2026</UpdateDate>
+                <SectionTitle>
+                    <h2 className="text-3xl font-bold">Presentation</h2>
+                    <UpdateDate>Updated on 28/10/2026</UpdateDate>
+                </SectionTitle>
             </SectionHeader>
             <p>
 
