@@ -18,6 +18,11 @@ body {
   font-family: 'Courier New', monospace;
 }
 
+::selection {
+  background-color: var(--color-primary);
+  color: var(--background-color);
+}
+
 :root {
   --background-color: #3939ff;
   --color-primary: white;
