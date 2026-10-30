@@ -22,6 +22,7 @@ function About() {
               </SectionHeader>
               <ul>
                   <li>GitHub</li>
+                  <li>itch.io</li>
                   <li>LinkedIn</li>
                   <li>YouTube</li>
                   <li>Twitter</li>
