@@ -4,7 +4,7 @@ import { SectionHeader } from '#/components/Section/SectionHeader.tsx'
 import { UpdateDate } from '../../components/UpdateDate/UpdateDate.tsx'
 import {Title} from "#/components/Titles/Title.tsx";
 import {Section} from "#/components/Section/Section.tsx";
-import Profile from '#/images/Profile.png';
+import Profile from '#/images/ProfileGray.png';
 
 export const Route = createFileRoute('/_main/')({ component: Home })
 
