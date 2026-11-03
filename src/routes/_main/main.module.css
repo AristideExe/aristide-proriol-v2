@@ -1,0 +1,14 @@
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--color-primary);
+    font-family: 'Courier New', monospace;
+}
+
+.main::selection {
+    background-color: var(--color-primary);
+    color: var(--background-color);
+}

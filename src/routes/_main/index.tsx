@@ -1,12 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { SectionTitle } from '#/components/Titles/SectionTitle'
-import { SectionHeader } from '#/components/Section/SectionHeader'
-import { UpdateDate } from '../components/UpdateDate/UpdateDate'
+import { SectionTitle } from '#/components/Titles/SectionTitle.tsx'
+import { SectionHeader } from '#/components/Section/SectionHeader.tsx'
+import { UpdateDate } from '../../components/UpdateDate/UpdateDate.tsx'
 import {Title} from "#/components/Titles/Title.tsx";
-import {Section} from "#/components/Section/Section";
+import {Section} from "#/components/Section/Section.tsx";
 import Profile from '#/images/Profile.png';
 
-export const Route = createFileRoute('/')({ component: Home })
+export const Route = createFileRoute('/_main/')({ component: Home })
 
 function Home() {
   return (

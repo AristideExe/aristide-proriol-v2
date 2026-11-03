@@ -8,15 +8,5 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
-  return (
-    <>
-      <div className="h-screen flex flex-col">
-          <Header />
-          <div className="mt-20 md:w-3/5 mx-auto px-5 flex-grow">
-              <Outlet />
-          </div>
-          <Footer />
-      </div>
-    </>
-  )
+  return <Outlet />
 }

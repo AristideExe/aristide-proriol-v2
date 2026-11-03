@@ -5,7 +5,7 @@ import {SectionTitle} from "#/components/Titles/SectionTitle.tsx";
 import {UpdateDate} from "#/components/UpdateDate/UpdateDate.tsx";
 import {Section} from "#/components/Section/Section.tsx";
 
-export const Route = createFileRoute('/contact')({
+export const Route = createFileRoute('/_main/contact')({
   component: Contact,
 })
 

@@ -8,7 +8,7 @@ import {Technology} from "#/components/Titles/Technology.tsx";
 import {Year} from "#/components/Titles/Year.tsx";
 import {LinkToProject} from "#/components/Titles/LinkToProject.tsx";
 
-export const Route = createFileRoute('/projects')({
+export const Route = createFileRoute('/_main/projects')({
   component: Projects,
 })
 
@@ -24,6 +24,7 @@ function Projects() {
                   </SectionTitle>
                   <Year>2026</Year>
                   <Technology>Unity, C#</Technology>
+                  <LinkToProject link={"https://aristideexe.itch.io/quiet-rooms"} />
               </SectionHeader>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel vulputate metus. Pellentesque arcu mauris, posuere ac dignissim vel, tincidunt ac lectus. Phasellus eu suscipit magna. Vivamus sapien sapien, posuere sit amet massa mattis.</p>
           </Section>
