@@ -1,4 +1,4 @@
-import {LinkIcon} from "#/components/Icons/LinkIcon.tsx";
+import {Icon} from "#/components/Icons/Icon.tsx";
 
 export function LinkToProject({link} : {link: string}) {
     return <a
@@ -7,7 +7,7 @@ export function LinkToProject({link} : {link: string}) {
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1 text-sm bg-(--color-primary) w-fit text-(--background-color) hover:underline p-1"
     >
-        <LinkIcon className="shrink-0" />
+        <Icon name="link" className="shrink-0" />
         Link to project
     </a>
 }

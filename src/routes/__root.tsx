@@ -1,12 +1,23 @@
 import { Outlet, createRootRoute, } from '@tanstack/react-router'
-import {Header} from "#/components/Header/Header.tsx";
-import {Footer} from "#/components/Footer/Footer.tsx";
 import '../styles.css'
+import {ToastContainer} from "react-toastify";
 
 export const Route = createRootRoute({
   component: RootComponent,
 })
 
 function RootComponent() {
-  return <Outlet />
+  return (
+      <>
+        <Outlet />
+        <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar
+            newestOnTop
+            closeOnClick
+            theme="light"
+        />
+      </>
+  )
 }
